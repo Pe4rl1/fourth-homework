@@ -1,14 +1,14 @@
-def concat(kakulka, *popa, reversed: bool = False):
+def concat(a, *args, reversed: bool = False):
     if reversed==False:
-        kakushka = ''
-        for a in popa:
-            kakulka += a
-        kakushka = kakulka
+        b = ''
+        for i in args:
+            a += a
+        b = a
     else:
-        kakushka = ''                                                                                                                                                                                                                                                                               #1000-7=?
-        for a in range(len(popa)-1,-1,-1):
-            kakushka += popa[a]
-        kakushka += kakulka
-    print(kakushka)
+        b = ''                                                                                                                                                                                                                                                                               #1000-7=?
+        for a in range(len(args)-1,-1,-1):
+            b += args[i]
+        b += a
+    print(b)
 
-concat('300', ' ', 'bucks',  reversed=True)
+concat('Hello', ' ', 'World',  reversed=True)
